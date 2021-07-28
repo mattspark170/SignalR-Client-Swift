@@ -7,7 +7,7 @@
 //
 import Foundation
 
-internal class TransportDescription {
+public class TransportDescription {
     let transportType: TransportType
     let transferFormats: [TransferFormat]
 

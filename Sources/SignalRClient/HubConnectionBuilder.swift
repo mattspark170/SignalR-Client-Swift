@@ -132,7 +132,7 @@ public class HubConnectionBuilder {
         return self
     }
 
-    internal func withCustomTransportFactory(transportFactory: @escaping (Logger, TransportType) -> TransportFactory) -> HubConnectionBuilder {
+    public func withCustomTransportFactory(transportFactory: @escaping (Logger, TransportType) -> TransportFactory) -> HubConnectionBuilder {
         self.transportFactory = transportFactory
         return self
     }
